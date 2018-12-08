@@ -241,7 +241,7 @@ void * APPROX_VC2(void *input)
     // Print the vertex cover
     for (unsigned int j=0; j<n: j++)
     {
-         if (visited[i])
+         if (visited[j])
         C.push_back(visited[j]);
     }
    cout<<"APPROX_VC2: ";
