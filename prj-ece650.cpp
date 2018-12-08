@@ -242,7 +242,7 @@ void * APPROX_VC2(void *input)
     for (unsigned int j=0; j< n; j++)
     {
          if (visited[j])
-        C.push_back(visited[j]);
+        C.push_back(j);
     }
    cout<<"APPROX_VC2: ";
     for (unsigned int i=0; i<C.size(); i++)
