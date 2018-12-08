@@ -238,8 +238,13 @@ void * APPROX_VC2(void *input)
     // Print the vertex cover
    cout<<"APPROX_VC2: ";
     for (unsigned int i=0; i<n; i++)
+    {
         if (visited[i])
           cout << i << " ";
+        if(i + 1 != n){
+                std::cout<<',';
+            }
+    }
 //timeCalculate();
      std::cout<<std::endl;
     return nullptr;
@@ -267,7 +272,11 @@ while(n_edges>0)
 std::sort( C.begin(), C.end(), std::less<int>());
     std::cout<<"APPROX-VC-1: ";
    for(unsigned int g=0; g < C.size(); g++)
+   {
     std::cout<< C[g]<< " ";
+       if(g + 1 != n){
+                std::cout<<',';
+   }
     std::cout<<std::endl;
     return &C;
 //timeCalculate();
