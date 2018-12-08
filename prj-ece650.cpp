@@ -202,7 +202,8 @@ void * APPROX_VC2(void *input)
    // cout<<"Hi2"<<endl;
     Graph graph_input = *(const Graph *)input;
     bool visited[n];
-    unsigned int c=0;
+    vector <unsigned int> C;
+   // unsigned int c=0;
     for (unsigned int i=0; i<n; i++)
         visited[i] = false;
 
@@ -230,7 +231,7 @@ void * APPROX_VC2(void *input)
                      // all edges from/to them would be ignored
                      visited[v] = true;
                      visited[u]  = true;
-                        c++;
+                        //c++;
                      break;
                 }
             }
@@ -238,17 +239,20 @@ void * APPROX_VC2(void *input)
     }
 
     // Print the vertex cover
-    
-   cout<<"APPROX_VC2: ";
-    for (unsigned int i=0; i<n; i++)
+    for (unsigned int j=0; j<n: j++)
     {
-        if (visited[i])
-        {
-            cout << i;
+         if (visited[i])
+        C.push_back(visited[j]);
+    }
+   cout<<"APPROX_VC2: ";
+    for (unsigned int i=0; i<C.size(); i++)
+    {
+        
+            cout <<C[i];
             
            // cout<<n;
-        }
-        if(i + 1 != c){
+        
+        if(i + 1 != C.size()){
                 std::cout<<',';
             }
          
