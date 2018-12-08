@@ -248,7 +248,7 @@ void * APPROX_VC2(void *input)
             
            // cout<<n;
         }
-        if(i + 1 != C){
+        if(i + 1 != c){
                 std::cout<<',';
             }
          
