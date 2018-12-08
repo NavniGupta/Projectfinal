@@ -242,12 +242,15 @@ void * APPROX_VC2(void *input)
    cout<<"APPROX_VC2: ";
     for (unsigned int i=0; i<n; i++)
     {
-        if (visited[i]==true && (c<=n))
+        if (visited[i]))
         {
-            cout << i<<',';
+            cout << i;
             
            // cout<<n;
         }
+        if(i + 1 != C){
+                std::cout<<',';
+            }
          
         
     }
