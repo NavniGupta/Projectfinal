@@ -242,15 +242,13 @@ void * APPROX_VC2(void *input)
    cout<<"APPROX_VC2: ";
     for (unsigned int i=0; i<n; i++)
     {
-        if (visited[i])
+        if (visited[i]==true && (i+1 !=c))
         {
-            cout << i;
+            cout << i<<',';
             
            // cout<<n;
         }
-        if(i + 1 != c){
-                std::cout<<',';
-            }  
+         
         
     }
 //timeCalculate();
