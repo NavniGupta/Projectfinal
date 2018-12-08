@@ -277,6 +277,7 @@ std::sort( C.begin(), C.end(), std::less<int>());
        if(g + 1 != n){
                 std::cout<<',';
    }
+   }
     std::cout<<std::endl;
     return &C;
 //timeCalculate();
