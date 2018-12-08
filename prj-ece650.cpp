@@ -241,7 +241,7 @@ void * APPROX_VC2(void *input)
     {
         if (visited[i])
         {
-            cout << i << " ";
+            cout << i;
             
         }
         if(i + 1 != n){
@@ -277,8 +277,8 @@ std::sort( C.begin(), C.end(), std::less<int>());
     std::cout<<"APPROX-VC-1: ";
    for(unsigned int g=0; g < C.size(); g++)
    {
-        std::cout<< C[g]<< " ";
-       if(g + 1 != n){
+        std::cout<< C[g];
+       if(g + 1 != C.size()){
                 std::cout<<',';
    }
    }
