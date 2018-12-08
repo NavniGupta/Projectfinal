@@ -236,15 +236,17 @@ void * APPROX_VC2(void *input)
     }
 
     // Print the vertex cover
+    int c=0;
    cout<<"APPROX_VC2: ";
     for (unsigned int i=0; i<n; i++)
     {
         if (visited[i])
         {
-            cout << i<<endl;
-            cout<<n;
+            cout << i;
+            c++;
+           // cout<<n;
         }
-        if(i + 1 != n){
+        if(i + 1 != c){
                 std::cout<<',';
             }  
         
