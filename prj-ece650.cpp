@@ -187,7 +187,7 @@ VertexVec &C = *new VertexVec();
    for (unsigned j=0; j < C.size(); j++){
             std::cout<<C[j];
             if(j + 1 != C.size()){
-                std::cout<<' ';
+                std::cout<<',';
             }
         }
         std::cout<<std::endl;
@@ -240,10 +240,13 @@ void * APPROX_VC2(void *input)
     for (unsigned int i=0; i<n; i++)
     {
         if (visited[i])
-          cout << i << " ";
-        if(i + 1 != n){
+        {
+            if(i + 1 != n){
                 std::cout<<',';
             }
+        }
+          //cout << i << " ";
+        
     }
 //timeCalculate();
      std::cout<<std::endl;
@@ -273,7 +276,7 @@ std::sort( C.begin(), C.end(), std::less<int>());
     std::cout<<"APPROX-VC-1: ";
    for(unsigned int g=0; g < C.size(); g++)
    {
-    std::cout<< C[g]<< " ";
+   // std::cout<< C[g]<< " ";
        if(g + 1 != n){
                 std::cout<<',';
    }
