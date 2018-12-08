@@ -241,8 +241,8 @@ void * APPROX_VC2(void *input)
     {
         if (visited[i])
         {
-            cout << i;
-            
+            cout << i<<endl;
+            cout<<n;
         }
         if(i + 1 != n){
                 std::cout<<',';
